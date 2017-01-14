@@ -1,0 +1,20 @@
+<?php
+    include'Model/Login/auth.php';
+    include'Model/Login/logout.php';
+    include'Model/DataAccessObjects/TeacherDao.php';
+    include'Model/DBConnectionConfigurations/DBConnect.php';
+    include'Model/DataAccessObjects/TeacherSubjectDao.php';
+    include'Model/DataAccessObjects/StudentDao.php';
+    include'Model/DataAccessObjects/TestDAO.php';
+    include'Model/DataAccessObjects/MarksDAO.php';
+    include'Model/Utilities/setVariables.php';
+    include'Model/Utilities/Grading.php';
+    include'Views/teacherHome.php';
+    include'Views/ViewSubjectStream.php';
+    include'Views/IndividualResults.php';
+    include'Views/teacherNavigation.php';
+    include'Views/TestDisplayPage.php';
+    include'Views/TestDisplayPage2.php';
+    include'Views/InsertMarks.php';
+?>
+

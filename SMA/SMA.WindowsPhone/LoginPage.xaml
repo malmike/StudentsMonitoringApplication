@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="SMA.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SMA"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Background="#FF044218">
+
+    <Grid Background="#FF067028">
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" HorizontalAlignment="Center" Width="150" Height="150" VerticalAlignment="Top">
+                <Image Source="Assets/SRMA_Logo White_150.PNG" Stretch="Fill"/>
+            </Grid>
+            <Grid Grid.Row="1" Margin="0,20,0,0" Width="350">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Margin="0,10,0,10">
+                        <TextBlock x:Name="fail" FontSize="20" TextAlignment="Center" Foreground="#FFEE3030" >ACCESS  DENIED</TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <StackPanel>
+                            <TextBlock FontSize="20" Opacity="0.8">Choose User Type</TextBlock>
+                            <ComboBox x:Name="User" BorderThickness="1">
+                                <ComboBoxItem Content="Parent" IsSelected="True"/>
+                                <ComboBoxItem Content="Teacher"/>
+                            </ComboBox>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="2" Margin="0,5,0,0">
+                        <TextBox x:Name="Email" TextWrapping="Wrap" FontSize="20" PlaceholderText="USER EMAIL"/>
+                    </Grid>
+                    <Grid Grid.Row="3" Margin="0,5,0,0">
+                        <PasswordBox x:Name="Password" FontSize="20" PlaceholderText="PASSWORD" IsPasswordRevealButtonEnabled="True"/>
+                    </Grid>
+                    <Grid Grid.Row="4" Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Button Content="LOGIN" Click="loginUser" FontSize="16"/>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <TextBlock x:Name="register" Tapped="Registration" FontSize="25" Margin="0,10,0,0" Foreground="#FFA5AE91" VerticalAlignment="Center">or Register</TextBlock>
+                        </Grid>
+                    </Grid>
+                </Grid>
+        </Grid>
+    </Grid>
+</Page>

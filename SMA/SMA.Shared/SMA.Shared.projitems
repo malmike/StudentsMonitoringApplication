@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>9a7b1b32-77a3-408b-ad29-78630b148bd2</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SMA</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Chat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\ChatDataContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetChat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetIndividualResultsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetParentDetails.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetParentKidsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetStudentResultsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetStudentsSubjectsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetStudentTestResultsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetSubjectData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetSubjectsStudentData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetTeacherDetails.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetTeacherSubjectData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetTestData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DataContext\GetTestYearsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\IndividualResults.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Parent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ParentKids.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PhpRetrieval\GetIndividualResults.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PhpRetrieval\GetParentKids.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PhpRetrieval\GetStreamAverage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PhpRetrieval\GetStudentResults.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PhpRetrieval\GetStudentsSubjects.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PhpRetrieval\GetStudentTestResults.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PhpRetrieval\GetSubject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PhpRetrieval\GetSubjectsStudent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PhpRetrieval\GetTeacherSubject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PhpRetrieval\GetTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PhpRetrieval\GetTestYears.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\StudentResults.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\StudentsSubjects.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\StudentTestResults.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Subject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SubjectsStudent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Teacher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\TeacherSubject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Test.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\TestYears.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\AppSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\Login.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\OnlineURI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\PushNotifications.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\SharedInformation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resources\UpdatePushURI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQLiteAsync.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>

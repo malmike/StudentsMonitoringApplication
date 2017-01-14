@@ -1,0 +1,17 @@
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\bin\Debug\PushLibrary.dll
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\bin\Debug\PushLibrary.pdb
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\bin\Debug\PushLibrary.pri
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\PushLibrary.csprojResolveAssemblyReference.cache
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\PushLibrary.dll
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\PushLibrary.pdb
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\priconfig.xml
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\priconfig.xml.intermediate
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\layout.resfiles
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\layout.resfiles.intermediate
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\resources.resfiles
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\resources.resfiles.intermediate
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\pri.resfiles
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\pri.resfiles.intermediate
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\qualifiers.txt
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\qualifiers.txt.intermediate
+d:\malmike21\OneDrive\documents\visual studio 2015\Projects\SMA\PushLibrary\obj\Debug\MultipleQualifiersPerDimensionFound.txt

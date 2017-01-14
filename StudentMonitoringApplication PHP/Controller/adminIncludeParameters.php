@@ -1,0 +1,21 @@
+<?php
+    include'Model/Login/auth.php';
+    include'Model/Login/logout.php';
+    include'Model/DataAccessObjects/TeacherDao.php';
+    include'Model/DataAccessObjects/ParentDao.php';
+    include'Model/DataAccessObjects/SubjectDao.php';
+    include'Model/DataAccessObjects/StudentDAO.php';
+    include'Model/DataAccessObjects/StreamDao.php';
+    include'Model/DBConnectionConfigurations/DBConnect.php';
+    include'Views/adminHome.php';
+    include'Views/StudentRegistration.php';
+    include'Views/DisplayTeachers.php';
+    include'Views/StreamRegistration.php';
+    include'Views/StreamRegistration2.php';
+    include'Views/ViewStreams.php';
+    include'Views/ViewSubjects.php';
+    include'Views/ViewStudents.php';
+    include'Views/ViewParents.php';
+    include'Views/SubjectRegistration.php';
+?>
+

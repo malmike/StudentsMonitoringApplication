@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="SMA.IndividualResultsGraph"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SMA"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d" Background="#FF044218">
+    <Grid x:Name="ContentPanel" Grid.Row="0" Margin="0,0,0,0" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF044218" Margin="0,0,0,0.167" d:LayoutOverrides="TopPosition, BottomPosition">
+            <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,0,0,0" Orientation="Horizontal" Height="79" VerticalAlignment="Top">
+                <Image Margin="20,0,0,0" Source="Assets/SRMA_white_logo_square_80x80.png" Height="62"/>
+                <TextBlock Margin="20,0,0,0" Text="SRM APPLICATION" Style="{ThemeResource BaseTextBlockStyle}" VerticalAlignment="Center" FontSize="25.333"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Background="#FF098F34" Grid.ColumnSpan="4" Margin="0,-0.167,0,0">
+
+            <Chart:SfChart x:Name="chart">
+            </Chart:SfChart>
+        </Grid>
+    </Grid>
+</Page>
+
+
+
+<!--<Chart:SfChart x:Name="graph" HorizontalAlignment="Right" VerticalAlignment="Top" Header="Blablabla" FontSize = "16">
+                -->
+<!--<Chart:SfChart.PrimaryAxis>
+                    <Chart:CategoryAxis Header="Student Marks" FontSize="14"/>
+                </Chart:SfChart.PrimaryAxis>
+
+
+                -->
+<!--Adding Legend to the SfChart-->
+<!--
+                <Chart:SfChart.Legend>
+                    <Chart:ChartLegend Visibility="Visible"/>
+                </Chart:SfChart.Legend>
+
+
+                -->
+<!--Initialize the series for SfChart-->
+<!--
+                <Chart:LineSeries x:Name="line1" Label="marks" ItemsSource="{Binding Results}"
+                    EnableAnimation="True" AnimationDuration="00:00:02" Palette="Metro"
+                    XBindingPath="id" YBindingPath="marks" ShowTooltip="True" 
+                    Chart:ChartTooltip.EnableAnimation="True">
+                    <Chart:LineSeries.AdornmentsInfo>
+                        <Chart:ChartAdornmentInfo SymbolStroke="Black" SymbolInterior="DarkGray" SymbolWidth="10" SymbolHeight="10" Symbol="Ellipse"></Chart:ChartAdornmentInfo>
+                    </Chart:LineSeries.AdornmentsInfo>
+                </Chart:LineSeries>-->
+<!--
+
+            </Chart:SfChart>-->

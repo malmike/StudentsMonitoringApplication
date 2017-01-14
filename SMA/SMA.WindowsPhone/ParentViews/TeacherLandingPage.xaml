@@ -1,0 +1,144 @@
+﻿<Page
+    x:Class="SMA.TeacherLandingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SMA"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Background="#FF044218">
+
+    <Page.Resources>
+        <ResourceDictionary>
+
+            <DataTemplate x:Key="HubSectionHeaderTemplate">
+                <TextBlock Margin="0,0,0,-9.5" Style="{ThemeResource SubheaderTextBlockStyle}" Text="{Binding}"/>
+            </DataTemplate>
+
+            <DataTemplate x:Key="TeacherDetails">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Margin="0,0,0,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock TextWrapping="Wrap" Style="{ThemeResource GroupHeaderTextBlockStyle}" Text="Name" />
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Grid Grid.Column="0">
+                                <TextBlock TextWrapping="Wrap" Margin="0,0,15,0" Style="{ThemeResource ListViewItemTextBlockStyle}" Text="{Binding name}" />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1" Margin="0,0,0,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" >
+                            <TextBlock TextWrapping="Wrap" Style="{ThemeResource GroupHeaderTextBlockStyle}" Text="Teacher ID" />
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <TextBlock  TextWrapping="Wrap" Style="{ThemeResource ListViewItemTextBlockStyle}" Text="{Binding teacher_id}" />
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="2" Margin="0,0,0,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" >
+                            <TextBlock TextWrapping="Wrap" Style="{ThemeResource GroupHeaderTextBlockStyle}" Text="Email" />
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <TextBlock  TextWrapping="Wrap" Style="{ThemeResource ListViewItemTextBlockStyle}" Text="{Binding email}" />
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="3" Margin="0,0,0,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" >
+                            <TextBlock TextWrapping="Wrap" Style="{ThemeResource GroupHeaderTextBlockStyle}" Text="Phone Number" />
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <TextBlock  TextWrapping="Wrap" Style="{ThemeResource ListViewItemTextBlockStyle}" Text="{Binding phone_number}" />
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </DataTemplate>
+
+
+            <DataTemplate x:Key="classList">
+                <Grid>
+
+                </Grid>
+            </DataTemplate>
+
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid x:Name="ContentPanel" Grid.Row="0" Margin="0,0,0,0" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="27*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF044218" Grid.ColumnSpan="4" Margin="0,0,0,0.167" d:LayoutOverrides="TopPosition, BottomPosition">
+            <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,0,0,0" Orientation="Horizontal" Height="79" VerticalAlignment="Top">
+                <Image Source="Assets/Logo.scale-80.png" Height="79"/>
+                <TextBlock Margin="10,0,0,0" Text="SRM APPLICATION" Style="{ThemeResource BaseTextBlockStyle}" VerticalAlignment="Center" FontSize="25.333"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Background="#FF098F34" Grid.ColumnSpan="4" Margin="0,-0.167,0,0">
+            <Pivot Margin="0,0,0,0" SelectionChanged="Pivot_SelectionChanged">
+                <PivotItem x:Name="Profile" Header="Teacher Profile">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <ListView
+                                x:Name="lvTeacher"
+                                ItemTemplate="{StaticResource TeacherDetails}"
+                            >
+                                <DataTemplate></DataTemplate>
+                            </ListView>
+                        </Grid>
+                    </Grid>
+                </PivotItem>
+                <PivotItem x:Name="kids" Header="Class List" Width="Auto" >
+                    <Grid>
+                        <ListView
+                            x:Name="classList"
+                            ItemTemplate="{StaticResource classList}"                          
+                            >
+                            <DataTemplate>
+                            </DataTemplate>
+                        </ListView>
+                    </Grid>
+                </PivotItem>
+            </Pivot>
+        </Grid>
+    </Grid>
+
+    <Page.BottomAppBar>
+        <CommandBar x:Name="bottomCommandBar" Background="#FF044212">
+            <AppBarButton Icon="Refresh" Label="Refresh" Click="Refresh_Data"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

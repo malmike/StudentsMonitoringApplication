@@ -1,0 +1,18 @@
+# Comment 
+
+SMA/SMA.Windows/obj/
+SMA/SMA.Windows/Bin/
+SMA/SMA.WindowsPhone/obj/
+SMA/SMA.WindowsPhone/Bin/
+SMA.v12.suo
+SMA.suo
+Thumbs.db
+.DS_Store
+*.zip
+*.gz
+*.vscode
+packages/
+.vs
+StudentMonitoringApplication\ PHP/Images/Parents/
+StudentMonitoringApplication\ PHP/Images/Students/
+StudentMonitoringApplication\ PHP/Images/Teachers/
